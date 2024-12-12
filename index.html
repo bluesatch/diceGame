@@ -12,43 +12,45 @@
     <main class="main" id="main">
         <section class="game-section" id="gameSection">
             <div class="container">
-                <button class="btn btn-primary" id="gameStartBtn">Start Game</button>
-                <div class="dice my-3">
-                    <div class="die" id="die1">
-                        <span class="die-display" id="dieDisplay1"></span>
+                <div class="col-5 mx-auto game-col">
+                    <button class="btn btn-primary" id="gameStartBtn">Start Game</button>
+                    <div class="dice my-3">
+                        <div class="die" id="die1">
+                            <span class="die-display" id="dieDisplay1"></span>
+                        </div>
+                        <div class="die" id="die2">
+                            <span class="die-display" id="dieDisplay2"></span>
+                        </div>
                     </div>
-                    <div class="die" id="die2">
-                        <span class="die-display" id="dieDisplay2"></span>
+                    <!-- close dice div -->
+                    <div class="text-div mb-3" id="textDiv">
+                        <p id="rollTotalDisplay"></p>
+                        <p id="message"></p>
                     </div>
-                </div>
-                <!-- close dice div -->
-                <div class="text-div mb-3" id="textDiv">
-                    <p id="rollTotalDisplay"></p>
-                    <p id="message"></p>
-                </div>
-                <!-- close text div -->
-                <div class="roll-div mb-3" id="rollDiv">
-                    <button class="btn btn-primary" id="rollBtn" disabled>Roll Dice</button>
-                    <p>Roll Count: 
-                        <span class="roll-count" id="rollCountDisplay"></span>
-                    </p>
-                    <p>Point: 
-                        <span class="point" id="pointDisplay"></span>
-                    </p>
-                </div>
-                <!-- close roll div -->
-                <div class="stats-div mb-3" id="statsDiv">
-                    <p class="stats">Total Wins: 
-                        <span class="total-wins" id="winDisplay"></span>
-                        Total Losses: 
-                        <span class="total-losses" id="lossDisplay"></span>
-                    </p>
-                    <p class="streak-stats">
-                        Current win streak:
-                        <span class="win-streak" id="winStreakDisplay"></span>
-                        Current lose streak:
-                        <span class="loss-streak" id="lossStreakDisplay"></span>
-                    </p>
+                    <!-- close text div -->
+                    <div class="roll-div mb-3" id="rollDiv">
+                        <button class="btn btn-primary" id="rollBtn" disabled>Roll Dice</button>
+                        <p>Roll Count: 
+                            <span class="roll-count" id="rollCountDisplay"></span>
+                        </p>
+                        <p>Point: 
+                            <span class="point" id="pointDisplay"></span>
+                        </p>
+                    </div>
+                    <!-- close roll div -->
+                    <div class="stats-div mb-3" id="statsDiv">
+                        <p class="stats">Total Wins: 
+                            <span class="total-wins" id="winDisplay"></span>
+                            Total Losses: 
+                            <span class="total-losses" id="lossDisplay"></span>
+                        </p>
+                        <p class="streak-stats">
+                            Current win streak:
+                            <span class="win-streak" id="winStreakDisplay"></span>
+                            Current lose streak:
+                            <span class="loss-streak" id="lossStreakDisplay"></span>
+                        </p>
+                    </div>
                 </div>
             </div>
 

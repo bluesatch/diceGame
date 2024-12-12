@@ -137,9 +137,22 @@ class Game {
         }
     }
 
+    // testing
+    // getRandomTime(el) {
+    //     let time = Math.ceil(Math.random() * 5) * 1000
+
+    //     setTimeout(()=> {
+    //         el.innerText = Math.ceil(Math.random() * 6)
+    //     }, time)
+    // } 
+    // end testing...
     // 3 
     craps(rolls) {
 
+        // testing...
+        // this.getRandomTime(this.dieDisplay1)
+        // this.getRandomTime(this.dieDisplay2)
+        // end testing...
         
         this.dieDisplay1.innerText = Math.ceil(Math.random() * 6)
         this.dieDisplay2.innerText = Math.ceil(Math.random() * 6)
@@ -209,3 +222,25 @@ const gameStartBtn = document.getElementById('gameStartBtn')
 const action = new Game()
 
 gameStartBtn.addEventListener('click', ()=> action.init())
+
+/**
+ * 
+ * Promise => object represents the eventual completion (or failure) of an asynchronous operation and its resulting value
+ * 
+ * Promise has three states:
+ *      pending (initial state)
+ *      fulfilled (success)
+ *      rejected (failed)
+ */
+
+const prom = new Promise((resolve, reject) => {
+    setTimeout(()=> {
+        resolve('loaded')
+    }, 3000)
+})
+
+prom.then((val)=> {
+    console.log(val)
+})
+
+console.log(prom)

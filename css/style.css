@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #eaeae3;
+    background-color: whitesmoke;
 }
 
 .dice {
@@ -25,6 +25,13 @@ body {
     font-size: 32px;
     text-align: center;
     line-height: 2;
+}
+
+.game-col {
+    padding: 20px;
+    background-color: white;
+    border: 4px solid black;
+    border-radius: 10px;
 }
 
 .text-div {
